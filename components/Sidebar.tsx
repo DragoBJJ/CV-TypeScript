@@ -19,7 +19,7 @@ const Sidebar = () => {
         height="400px"
         width="280px"
         quality="100"
-        className="lg:w-full lg:h-full mx-auto rounded-full"
+        className="mx-auto rounded-full shadow-custom-light dark:shadow-custom-dark"
       />
       <h3 className=" my-4 text-2xl font-medium tracking-wider font-kaushan">
         <span className="text-blue-600">Jakub</span> Pawelski
@@ -40,7 +40,7 @@ const Sidebar = () => {
         <a href="https://github.com/DragoBJJ">
           <FiGithub className="w-8 h-8 mr-5 cursor-pointer transition duration-300 ease-in-out  transform hover:scale-150 text-blue-600" />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/jakub-pawelski-885559228/">
           <AiFillLinkedin className="w-8 h-8 cursor-pointer transition duration-300 ease-in-out transform hover:scale-150 text-blue-600" />
         </a>
       </div>

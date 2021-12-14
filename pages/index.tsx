@@ -1,4 +1,4 @@
-import { GetStaticPropsContext, NextPage } from "next";
+import { NextPage, GetServerSidePropsContext, GetServerSideProps } from "next";
 import ServiceCard from "../components/ServiceCard";
 import { IService } from "../type";
 import { services } from "../data";
@@ -8,7 +8,10 @@ import { BsCodeSlash } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { routerAnimation } from "../animation";
 
-const index: NextPage = () => {
+import { env } from "process";
+
+const index: NextPage = ({ endpoint }) => {
+  console.log("elo", endpoint);
   return (
     <motion.div
       className="flex flex-col px-6 pt-1 align-center flex-grow"
@@ -57,13 +60,15 @@ const index: NextPage = () => {
 
 export default index;
 
-// export const getStaticProps = async (context: GetStaticPropsContext) => {
-//   const res = await fetch("http://localhost:3000/api/services");
-//   const { services } = await res.json();
+export const getServerSideProps: GetServerSideProps = async (
+  context: GetServerSidePropsContext
+) => {
+  // const res = await fetch(`${env.VERCEL_URL}/api/services`);
+  // const { services } = await res.json();
 
-//   return {
-//     props: {
-//       services
-//     }
-//   };
-// };
+  return {
+    props: {
+      endpoint: env.VERCEL_URL
+    }
+  };
+};
