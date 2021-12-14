@@ -10,6 +10,8 @@ import { routerAnimation } from "../animation";
 
 import { env } from "process";
 
+import Head from "next/head";
+
 const index: NextPage = () => {
   return (
     <motion.div
@@ -19,6 +21,9 @@ const index: NextPage = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Web Developer | Portfolio | React</title>
+      </Head>
       <Fade top>
         <h5 className="text-center my-3 text-lg  max-w-xl m-auto">
           I am currently a 3rd year computer science student with a

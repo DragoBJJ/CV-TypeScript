@@ -11,6 +11,14 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
             rel="stylesheet"
           />
+          <meta
+            name="description"
+            content="MERN stack developer looking for a job"
+          />
+          <meta
+            name="keywords"
+            content="Full Stack Web Developer, MERN developer"
+          />
         </Head>
         <body className="bg-blue-600">
           <Main />

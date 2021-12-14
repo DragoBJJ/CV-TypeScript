@@ -7,6 +7,7 @@ import { Fade } from "react-reveal";
 
 import { motion } from "framer-motion";
 import { routerAnimation } from "../animation";
+import Head from "next/head";
 
 const stagger = {
   initial: {},
@@ -43,6 +44,9 @@ const Projects = () => {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>Web Developer | Project | React</title>
+      </Head>
       <ProjectNavBar filterCategory={filterCategory} active={active} />
       <Fade top>
         <div className="grid grid-cols-12 gap-4 my-3 relative">

@@ -19,7 +19,7 @@ const ServiceCard: FC<{ service: IService }> = ({
       )}
 
       <div>
-        <h4 className="font-bold">{title}</h4>
+        <h5 className="font-bold">{title}</h5>
         <p dangerouslySetInnerHTML={createMarkup()} />
       </div>
     </div>

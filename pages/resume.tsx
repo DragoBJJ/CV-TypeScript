@@ -6,6 +6,7 @@ import { IoRocketOutline } from "react-icons/io5";
 
 import { motion } from "framer-motion";
 import { routerAnimation } from "../animation";
+import Head from "next/head";
 
 const resume = () => {
   return (
@@ -16,6 +17,9 @@ const resume = () => {
       initial="initial"
       exit="exit"
     >
+      <Head>
+        <title>Web Developer | Resume | React</title>
+      </Head>
       <div className="grid gap-6 md:grid-cols-2">
         <Fade left>
           <div className="text-center">
