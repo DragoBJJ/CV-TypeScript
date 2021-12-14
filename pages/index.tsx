@@ -10,8 +10,7 @@ import { routerAnimation } from "../animation";
 
 import { env } from "process";
 
-const index: NextPage = ({ endpoint }) => {
-  console.log("elo", endpoint);
+const index: NextPage = () => {
   return (
     <motion.div
       className="flex flex-col px-6 pt-1 align-center flex-grow"
@@ -45,7 +44,7 @@ const index: NextPage = ({ endpoint }) => {
           {services &&
             services.map((service: IService) => {
               return (
-                <Fade top>
+                <Fade top key={service.title}>
                   <div className="lg:col-span-1 bg-ecru rounded-lg bg-white border-2 border-black dark:border-blue-600 dark:bg-black">
                     <ServiceCard service={service} />
                   </div>

@@ -57,7 +57,7 @@ const NavBar = () => {
     } else {
       setActiveItem("About");
     }
-  }, []);
+  }, [pathname]);
 
   return (
     <div className="flex justify-between px-5 py-3 my-3">
