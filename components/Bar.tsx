@@ -18,13 +18,13 @@ const Bar: FC<{ data: ISkill }> = ({ data: { Icon, level, name } }) => {
   return (
     <div className="my-2 bg-ecru  rounded-full border-2 border-blue-600 dark:bg-black">
       <motion.div
-        className="px-4 py-1 flex  text-black  text-lg  dark:text-white  items-start rounded-full bg-blue-600"
+        className="px-4 py-1 flex  text-ecru  text-lg items-start rounded-full bg-blue-600"
         variants={variants}
         initial="initial"
         animate="animate"
       >
         <div className="flex justify-center items-center">
-          <Icon className=" ml-1 mr-3" size="15px" />
+          <Icon className="ml-1 mr-3 dark:text-black" size="15px" />
           {name}
         </div>
       </motion.div>

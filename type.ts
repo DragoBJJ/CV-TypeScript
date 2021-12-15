@@ -25,7 +25,6 @@ export interface IProject {
 
 export type Category =
   | "react"
-  | "node"
   | "django"
   | "typeScript"
   | "python"

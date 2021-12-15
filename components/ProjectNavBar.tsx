@@ -38,7 +38,6 @@ export const ProjectNavBar: FC<{
         filterCategory={filterCategory}
         active={active}
       />
-      <NavItem value="node" filterCategory={filterCategory} active={active} />
     </div>
   );
 };

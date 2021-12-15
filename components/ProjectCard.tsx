@@ -63,7 +63,7 @@ export const ProjectCard: FC<{
                   }
                   alt={name}
                 />
-                <div className="flex justify-center space-x-3 mt-4">
+                <div className="flex justify-center space-x-3 m-5">
                   <a
                     href={github_url}
                     className="flex items-center px-2  py-1 space-x-3  rounded-full text-lg dark:border-blue-600 border-2 border-black  hover:bg-black hover:text-white dark:hover:bg-blue-600 transition duration-200 ease-in-out"
@@ -85,15 +85,17 @@ export const ProjectCard: FC<{
               <div>
                 <h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
                 <h3 className="mb-3 font-medium text-lg">{description}</h3>
-                <div className="flex  flex-wrap mt-5 space-x-2 text-sm tracking-wider">
-                  {key_techs.map(item => (
-                    <span
-                      className="px-2 py-1 my-1  border-2 border-black dark:border-blue-600 rounded-full"
-                      key={item}
-                    >
-                      {item}
-                    </span>
-                  ))}
+                <div className="flex  flex-wrap justify-center m-5 space-x-2 text-sm ">
+                  {key_techs.map((item, index) => {
+                    return (
+                      <span
+                        className="px-2 py-1 my-2  border-2 border-black dark:border-blue-600 rounded-full"
+                        key={item}
+                      >
+                        {item}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
               <button
