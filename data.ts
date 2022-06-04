@@ -9,7 +9,7 @@ export const services: IService[] = [
     Icon: GrReactjs,
     title: "Frontend Developer",
     about:
-      "<b>TypeScript</b>, <b>React</b>, <b>Next.js</b>, <b> GraphQl</b> and <b>Tailwind</b>",
+      "Building a fronted architecture with <b>TypeScript</b>, <b>React</b>, <b>Next.js</b>, <b> GraphQl</b>",
   },
   {
     Icon: FaServer,
@@ -19,7 +19,8 @@ export const services: IService[] = [
   {
     Icon: FiDatabase,
     title: "Smart Contract & BlockChain",
-    about: "<b>Web3.0</b>, <b>Solidity</b>, <b>Ethers.js</b>, <b>HardHat</b>",
+    about:
+      "First steps with <b>Web3.0</b>, <b>Solidity</b>, <b>Ethers.js</b>, <b>HardHat</b>",
   },
 ];
 
