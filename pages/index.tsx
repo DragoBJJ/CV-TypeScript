@@ -10,9 +10,6 @@ import { routerAnimation } from "../animation";
 import Head from "next/head";
 
 const index = () => {
-
-
-  console.log("services",services)
   return (
     <motion.div
       className="flex flex-col px-6 pt-1 align-center flex-grow"
