@@ -28,7 +28,7 @@ const resume = () => {
               <GiGraduateCap size="40px" className="ml-2" />
             </div>
             <div>
-              <h5 className="my-2 text-xl font-bold text-lg">
+              <h5 className="my-2  font-bold text-xl">
                 Computer Science Engineering
               </h5>
               <p className="font-bold text-lg">Higher School of Banking</p>
@@ -38,7 +38,7 @@ const resume = () => {
               </p>
             </div>
           </div>
-        </Fade>
+        </Fade> 
         <Fade right>
           <div className="text-center">
             <div className="flex justify-center items-center">
@@ -63,7 +63,7 @@ const resume = () => {
           <h5 className="my-3 text-2xl font-bold text-center">
             Languages & Frameworks
           </h5>
-          <div className="my-2">
+          <div className="my-4">
             {languanges.map(item => {
               return <Bar key={item.name} data={item} />;
             })}

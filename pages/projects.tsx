@@ -9,14 +9,7 @@ import { motion } from "framer-motion";
 import { routerAnimation } from "../animation";
 import Head from "next/head";
 
-const stagger = {
-  initial: {},
-  animate: {
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
+
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);

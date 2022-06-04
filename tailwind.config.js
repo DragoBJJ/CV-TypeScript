@@ -3,31 +3,34 @@ module.exports = {
   darkMode: "class",
   theme: {
     fontFamily: {
-      kaushan: ["Kaushan Script"]
+      kaushan: ["Kaushan Script"],
     },
     boxShadow: {
       "custom-light": "0 0 10px #313131",
-      "custom-dark": "5px 5px 10px #0a0c0e, -5px -5px 10px #14161c"
+      "custom-dark": "5px 5px 10px #0a0c0e, -5px -5px 10px #14161c",
     },
     extend: {
       colors: {
         black: {
           DEFAULT: "#1d1d1d",
-          DARK: "#354358"
+          DARK: "#354358",
         },
         green: {
-          DEFAULT: "#00f260"
+          DEFAULT: "#00f260",
         },
         ecru: {
-          DEFAULT: "#faf7e5"
-        }
-      }
-    }
+          DEFAULT: "#faf7e5",
+        },
+        dark: {
+          DEFAULT: "#354358",
+        },
+      },
+    },
   },
   variants: {
     extend: {
-      boxShadow: ["dark"]
-    }
+      boxShadow: ["dark"],
+    },
   },
-  plugins: []
+  plugins: [],
 };

@@ -1,7 +1,7 @@
 import { FaServer } from "react-icons/fa";
 import { IService, ISkill, IProject } from "./type";
 import { BsCircleFill } from "react-icons/bs";
-import { GrReactjs } from "react-icons/gr";
+import { GrGraphQl, GrReactjs } from "react-icons/gr";
 import { FiDatabase } from "react-icons/fi";
 
 export const services: IService[] = [
@@ -9,69 +9,74 @@ export const services: IService[] = [
     Icon: GrReactjs,
     title: "Frontend Developer",
     about:
-      "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b> and <b>React</b>"
+      "<b>TypeScript</b>, <b>React</b>, <b>Next.js</b>, <b> GraphQl</b> and <b>Tailwind</b>",
   },
   {
     Icon: FaServer,
     title: "Backend Developer",
-    about: "handle database, server, api using <b>Django <b/>"
+    about: "handle database, server, api using <b>Node.js <b/>",
   },
   {
     Icon: FiDatabase,
-    title: "BigData & Cloud Computing",
-    about: "Hadoop, Hive, Google Cloud"
-  }
+    title: "Smart Contract & BlockChain",
+    about: "<b>Web3.0</b>, <b>Solidity</b>, <b>Ethers.js</b>, <b>HardHat</b>",
+  },
 ];
 
 export const languanges: ISkill[] = [
   {
     name: "JavaScript",
     level: "70%",
-    Icon: BsCircleFill
+    Icon: BsCircleFill,
   },
   {
     name: "TypeScript",
-    level: "50%",
-    Icon: BsCircleFill
+    level: "70%",
+    Icon: BsCircleFill,
   },
   {
     name: "React",
     level: "70%",
-    Icon: BsCircleFill
+    Icon: BsCircleFill,
   },
   {
-    name: "SQL",
-    level: "50%",
-    Icon: BsCircleFill
+    name: "Next.js",
+    level: "70%",
+    Icon: BsCircleFill,
+  },
+  {
+    name: "GraphQl",
+    level: "70%",
+    Icon: BsCircleFill,
   },
   {
     name: "StyledComponent",
     level: "80%",
-    Icon: BsCircleFill
+    Icon: BsCircleFill,
   },
   {
     name: "ChakraUI",
     level: "70%",
-    Icon: BsCircleFill
+    Icon: BsCircleFill,
   },
   {
     name: "Tailwind",
     level: "70%",
-    Icon: BsCircleFill
-  }
+    Icon: BsCircleFill,
+  },
 ];
 
 export const tools: ISkill[] = [
   {
     name: "Figma",
     level: "70%",
-    Icon: BsCircleFill
+    Icon: BsCircleFill,
   },
   {
     name: "Jira",
     level: "70%",
-    Icon: BsCircleFill
-  }
+    Icon: BsCircleFill,
+  },
 ];
 
 export const projects: IProject[] = [
@@ -84,7 +89,7 @@ export const projects: IProject[] = [
     deployed_url: "https://covid-19-tracker-b363d.web.app/",
     github_url: "https://github.com/DragoBJJ/covid-19-tracker",
     category: ["react", "javaScript"],
-    key_techs: ["React", "Chart.js", "Material UI"]
+    key_techs: ["React", "Chart.js", "Material UI"],
   },
   {
     id: 2,
@@ -95,7 +100,7 @@ export const projects: IProject[] = [
     deployed_url: "https://expense-tracker-fe7fe.web.app/",
     github_url: "https://github.com/DragoBJJ/ExpenseTracker",
     category: ["react", "javaScript"],
-    key_techs: ["React", "Chart.js", "Material UI"]
+    key_techs: ["React", "Chart.js", "Material UI"],
   },
   {
     id: 3,
@@ -106,7 +111,7 @@ export const projects: IProject[] = [
     deployed_url: "https://brainhealthpage-99fd9.web.app/",
     github_url: "https://github.com/DragoBJJ/BrainHealthPage-Material-Ui",
     category: ["react", "javaScript"],
-    key_techs: ["React", "Material UI"]
+    key_techs: ["React", "Material UI"],
   },
   {
     id: 4,
@@ -116,7 +121,7 @@ export const projects: IProject[] = [
     deployed_url: "https://dragobjj.github.io/TicTacToe-React/",
     github_url: "https://github.com/DragoBJJ/TicTacToe-React",
     category: ["react", "javaScript"],
-    key_techs: ["React", "javaScript"]
+    key_techs: ["React", "javaScript"],
   },
   {
     id: 5,
@@ -127,7 +132,7 @@ export const projects: IProject[] = [
     deployed_url: null,
     github_url: "https://github.com/DragoBJJ/Tesla-Clone",
     category: ["react", "javaScript"],
-    key_techs: ["React", "javaScript", "styledComponents"]
+    key_techs: ["React", "javaScript", "styledComponents"],
   },
   {
     id: 6,
@@ -138,6 +143,16 @@ export const projects: IProject[] = [
     deployed_url: null,
     github_url: "https://github.com/DragoBJJ/NoteTakingApp",
     category: ["react", "javaScript"],
-    key_techs: ["React", "javaScript", "styledComponents"]
-  }
+    key_techs: ["React", "javaScript", "styledComponents"],
+  },
+  {
+    id: 7,
+    name: "E-commerce",
+    description: "E-commerce",
+    image_path: "/e-commerce.png",
+    deployed_url: "https://ecommerce-next-type-script.vercel.app/",
+    github_url: "https://github.com/DragoBJJ/Ecommerce-Next-TypeScript",
+    category: ["react", "typeScript"],
+    key_techs: ["React", "TypeScript", "Next.js", "GraphQl", "Tailwind"],
+  },
 ];

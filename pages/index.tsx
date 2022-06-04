@@ -1,4 +1,3 @@
-import { NextPage, GetServerSidePropsContext, GetServerSideProps } from "next";
 import ServiceCard from "../components/ServiceCard";
 import { IService } from "../type";
 import { services } from "../data";
@@ -8,11 +7,12 @@ import { BsCodeSlash } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { routerAnimation } from "../animation";
 
-import { env } from "process";
-
 import Head from "next/head";
 
-const index: NextPage = () => {
+const index = () => {
+
+
+  console.log("services",services)
   return (
     <motion.div
       className="flex flex-col px-6 pt-1 align-center flex-grow"
@@ -29,7 +29,7 @@ const index: NextPage = () => {
           I am currently a 3rd year computer science student with a
           specialization in
           <span className="text-blue-600"> BigData & Cloud Computing.</span> I
-          have <span className="text-blue-600">six months</span> of experience
+          have <span className="text-blue-600">One year</span> of experience
           as a Front-end Developer at{" "}
           <span className="text-blue-600">Accenture.</span>
         </h5>
@@ -50,7 +50,7 @@ const index: NextPage = () => {
             services.map((service: IService) => {
               return (
                 <Fade top key={service.title}>
-                  <div className="lg:col-span-1 bg-ecru rounded-lg bg-white border-2 border-black dark:border-blue-600 dark:bg-black">
+                  <div className="lg:col-span-1 bg-ecru rounded-lg p-2 border-2 border-dark dark:border-blue-600 dark:bg-black">
                     <ServiceCard service={service} />
                   </div>
                 </Fade>
@@ -62,17 +62,4 @@ const index: NextPage = () => {
   );
 };
 
-export default index;
-
-export const getServerSideProps: GetServerSideProps = async (
-  context: GetServerSidePropsContext
-) => {
-  // const res = await fetch(`${env.VERCEL_URL}/api/services`);
-  // const { services } = await res.json();
-
-  return {
-    props: {
-      endpoint: env.VERCEL_URL
-    }
-  };
-};
+export default index
